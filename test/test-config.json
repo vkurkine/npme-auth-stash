@@ -1,0 +1,26 @@
+{
+
+    "logging": {
+        "level" : "debug",
+        "streams": [
+        {
+          "type"   : "rotating-file",
+          "path"   : "./logs/npme-auth-stash.log",
+          "period" : "1d",
+          "count"  : 5
+        }
+      ]
+    },
+
+    "stash": {
+        "repository_user"           : "npm-repository-admin",
+        "repository_password"       : "secret",
+        "repository_host"           : "http://localhost:8080",
+        "token_encryption_key"      : "AAAAAAAAAAAAAAAA",
+        "read_authorization_policy" : "authenticated",
+        "login_token_ttl"           : 86400,
+        "http_client_options"       : {
+          "strictSSL"   : false
+        }
+    }
+}

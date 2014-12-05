@@ -1,0 +1,28 @@
+{
+
+    "logging": {
+        "level" : "info",
+        "streams": [
+        {
+          "type"   : "rotating-file",
+          "path"   : "/etc/npme/logs/npme-auth-stash.log",
+          "period" : "1d",
+          "count"  : 5
+        }
+      ]
+    },
+
+    "stash": {
+        "repository_user"           : "npm-repository-user",
+        "repository_password"       : "secret",
+        "repository_host"           : "https://stash.myhost.com",
+        "token_encryption_key"      : "changeit",
+        "read_authorization_policy" : "authenticated",
+        "login_token_ttl"           : 2592000,
+        "http_client_options"       : {
+          "strictSSL"   : false
+        }
+    }
+}
+
+

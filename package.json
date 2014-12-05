@@ -1,0 +1,29 @@
+{
+  "name": "npme-auth-stash",
+  "version": "0.0.1",
+  "description": "Atlassian Stash authentication and authorization strategy for npm Enterprise",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkurkine/npme-auth-stash/npme-auth-stash.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha -- -R spec"
+  },
+  "dependencies": {
+    "bluebird": "^2.3.6",
+    "bunyan": "^1.2.3",
+    "chance": "^0.6.3",
+    "github": "^0.2.2",
+    "lodash": "^2.4.1",
+    "nconf": "^0.7.1",
+    "nomnom": "^1.8.1",
+    "redis": "^0.12.1",
+    "request": "^2.47.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.2",
+    "mocha": "1.21.4",
+    "nock": "^0.48.1"
+  }
+}
